@@ -3,7 +3,7 @@ layout: "layouts/page.njk"
 title: Todos los Episodios
 pagination:
   data: podcast[0]
-  size: 12
+  size: 6
   alias: epis
 ---
 {# 
@@ -13,7 +13,7 @@ pagination:
 {# <ul class="list-unstyled">     #}
 <div class="row">
 {% for episode in epis %}
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3">
+        <div class="col-12 col-md-6 col-lg-4 p-3">
                 <a href="/episodios/{{ episode.slug }}/index.html" class="episode-card rounded shadow">
                         <object>
                         <div class="episode-image mb-3 rounded-top"><img src="{{ episode.itunes.image }}" class="img-fluid rounded-top"></div>
