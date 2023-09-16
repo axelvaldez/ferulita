@@ -3,16 +3,16 @@
 <form action="/gracias" method="post" name="contacto-episodio" netlify>
 <div class="row">
     <div class="col-12 col-lg-6 mb-2">
-        <label for="nombre" class="d-block mb-1" required>Nombre</label>
-        <input type="text" name="nombre" class="form-control">             
+        <label for="nombre" class="d-block mb-1">Nombre</label>
+        <input type="text" name="nombre" class="form-control" required>             
     </div>
-    <div class="col-12 col-lg-6 mb-2" required>
+    <div class="col-12 col-lg-6 mb-2">
         <label for="nombre" class="d-block mb-1">¿Cómo podemos contactarte?</label>
-        <input type="text" name="contacto" class="form-control">
+        <input type="text" name="contacto" class="form-control" required>
     </div>
-    <div class="col-12 mb-2" required>
+    <div class="col-12 mb-2">
         <label for="comentarios" class="d-block mb-1">Tus comentarios o preguntas</label>
-        <textarea rows="6" name="comentarios" class="form-control"></textarea>
+        <textarea rows="6" name="comentarios" class="form-control" required></textarea>
     </div>
     <div class="col-12 mt-2">
         <button class="btn btn-primary" type="submit">Enviar</button>
