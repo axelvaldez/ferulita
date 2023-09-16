@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferulita para el Alma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/shikwasa/style.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/player.css">
+</head>
+<body>
+<!-- nav -->
+<div class="header container">
+    <nav class="border-bottom border-3 border-dark">
+        <div class="row">
+        <div class="col-12 col-lg-5 py-5 pb-0 pb-lg-5">
+            <p class="h3 m-0"><a href="/" class="text-dark">Ferulita para el Alma</a></p>
+        </div>
+        <div class="col-12 col-lg-7 d-flex flex-column justify-content-lg-center align-items-stretch py-5 pt-2 pt-lg-5">
+            <ul class="list-unstyled d-flex justify-content-start justify-content-lg-end align-items-center m-0 h6">
+            <li><a href="/episodios/">Episodios</a></li>
+            <li class="ms-4"><a href="/acerca/">Acerca de Ferulita</a></li>
+            <li class="ms-4"><a href="/contacto/">Contacto</a></li>
+            <li class="ms-auto ms-lg-4"><a class="btn btn-primary" href="/suscripcion/">Suscríbete</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</div>
+<!-- featured episode -->
+<section>
+  <div class="container">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <h1 class="display-2">13. &quot;Asume incompetencia antes que conspiración&quot; — Maquiavelo</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-4 d-none d-lg-block">
+      <img src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded400/17118525/17118525-1632200887331-3e64a45cb6615.jpg" class="img-fluid mb-3 mb-lg-0 rounded" alt="">
+    </div>
+    <div class="col-12 col-lg-8">
+        <div class="episode-player mb-4 rounded shadow"></div>
+<script src="/assets/shikwasa/shikwasa.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  const player = new Shikwasa.Player({
+    container: () => document.querySelector('.episode-player'),
+    audio: {
+      title: '13. &quot;Asume incompetencia antes que conspiración&quot; — Maquiavelo',
+      artist: 'Ferulita para el Alma',
+      cover: 'https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded400/17118525/17118525-1632200887331-3e64a45cb6615.jpg',
+      src: 'https://anchor.fm/s/66a16254/podcast/play/47681914/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-1-15%2Fcf5e14bf-67c7-dd85-599f-639c076836d8.mp3',
+    },
+  })
+});
+</script>
+        <p class="episode-date">15 de febrero de 2022</p>
+        <div class="episode-description"><p>En esta primera parte de la entrevista con Beto Bueno, analizamos las circunstancias que hacen tan fácil desparramar pendejadas en redes sociales.</p>
+<p><br></p>
+</div>   
+
+        
+<h4 class="h5 mb-3 mt-5 pt-5 border-top border-white">¿Tienes preguntas o comentarios acerca de este episodio?</h4>
+<div class="row">
+    <div class="col-12 col-lg-6 mb-2">
+        <label for="nombre" class="d-block mb-1" required>Nombre</label>
+        <input type="text" name="nombre" class="form-control">             
+    </div>
+    <div class="col-12 col-lg-6 mb-2" required>
+        <label for="nombre" class="d-block mb-1">¿Cómo podemos contactarte?</label>
+        <input type="text" name="contacto" class="form-control">
+    </div>
+    <div class="col-12 mb-2" required>
+        <label for="comentarios" class="d-block mb-1">Tus comentarios o preguntas</label>
+        <textarea rows="6" name="comentarios" class="form-control"></textarea>
+    </div>
+    <div class="col-12 mt-2">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+</div>
+ 
+    </div>
+  </div>
+    </div>
+</section>
+<!-- subscribe banner -->
+<section class="alt">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 text-center">
+          <h3>¡No te pierdas ningún episodio!</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 text-center">
+          <p>Ferulita para el Alma es para pacientes y médicos por igual. No importa tu nivel de conocimiento médico, tenemos algo para tí en cada episodio.</p>
+          <p>Suscríbete y acompañanos a explorar las verdades a veces incómodas, otras divertidas, del mundo de la atención médica.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 text-center">
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li><a href="#" class="btnicon spotify mx-1"><i class="fa-brands fa-spotify"></i></a></li>
+            <li><a href="#" class="btnicon applepodcasts mx-1"><i class="fa-solid fa-podcast"></i></a></li>
+            <li><a href="#" class="btnicon rss mx-1"><i class="fa fa-rss"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </section>
+</body>
+</html>

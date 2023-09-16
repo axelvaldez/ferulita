@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Big+Shoulders+Text:wght@400;700&display=swap');
+
+html{
+  font-size: 20px;
+}
+body{
+  font-family: "Big Shoulders Text";
+  font-weight: 400;
+  letter-spacing: .3px;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1, h2,
+.h1, .h2{
+  font-family: "Big Shoulders display";
+  font-weight: 800;
+}
+
+h3, h4, h5, h6,
+.h3, .h4, .h5, .h6{
+  font-family: "Big Shoulders display";
+  font-weight: 700;
+  letter-spacing: .025rem;
+}
+
+section{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.btnicon{
+  width: 2rem;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  transition: 100ms ease-in all;
+  
+  &:hover{
+    scale: 1.2;
+  }
+}
+
+.spotify,
+.spotify:hover{
+  color: #fff;
+  background: #1DB954;
+}
+
+.applepodcasts,
+.applepodcasts:hover{
+  color: #fff;
+  background: #8e43e7;
+}
+
+.rss,
+.rss:hover{
+  color: #fff;
+  background: #f48924;
+}
+
+.episode-card{
+  position: relative;
+  display: block;
+}
+
+.episode-card .episode-description > *{
+  margin: 0;
+  opacity: .75;
+}
+
+.episode-card .episode-description > :not(:first-child){
+  display: none;
+}
+
+.episode-player{
+  position: relative;
+  top: -4px;
+}
+
+.episode-player .shk-bar{
+  border-radius: .25rem .25rem 0 0;
+}
+
+.episode-player .shk-bar_played{
+  border-radius: .25rem 0 0 0;
+}
+
+.episode-player .shk-bar_loaded{
+  border-radius: .25rem 0 0 0;
+  background: var(--link);
+  opacity: .5;
+}
+
+@media (hover: hover){
+  .episode-card{
+    transform: translateY(0);
+    transition: 200ms ease-in transform;
+  }
+
+  .episode-card:hover{
+    transform: translateY(-0.5rem);
+  }
+}
+
+/* COLOR */
+html{
+  --bg: #DCE8EB;
+  --bg-alt: #EBF2F3;
+  --link: #00B1B4;
+  --dark: #102935; 
+}
+body{
+  background: var(--bg);
+  color: var(--dark);
+}
+section.alt{
+  background: var(--bg-alt);
+}
+
+a{
+  color: var(--link);
+}
+
+a:hover{
+  color: color-mix(in srgb, var(--link) 50%, var(--dark));
+}
+
+.btn-primary{
+  background: var(--link);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover{
+  background: color-mix(in srgb, var(--link) 50%, var(--dark));
+}
+
+.episode-card,
+.episode-card:hover{
+  background: var(--bg-alt);
+  color: var(--dark);
+}
+
+
+.episode-card .episode-title{
+  color: var(--dark);
+  transition: 200ms ease-in all;
+}
+
+.episode-card:hover .episode-title{
+  color: var(--link);
+  transition: 200ms ease-in all;
+}
+
+.episode-date{
+  opacity: .5;
+}
+
+.episode-player{
+  background: var(--bg-alt);
+}
+
+.episode-player .shk-btn{
+  color: var(--link);
+}
+
+@media (hover: hover){
+  .episode-player .shk-btn{
+    color: var(--dark);
+  }
+
+  .episode-player .shk-btn:hover{
+    color: var(--link);
+  }
+}
+
+
+
+.episode-player .shk-bar-handle,
+.episode-player .shk-bar_played{
+  background: var(--link);
+}
+
+.form-control{
+  background: var(--bg-alt);
+  border: none;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 0 .25rem rgba(0,177,180,.25);
+}
+
+.blend-multiply{
+  mix-blend-mode: multiply;
+}
+
+.hero-slider{
+  position: relative;
+}
+
+.hero-slider > :not(:first-child){
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.hero-slider > * { animation: 8s infinite linear fade }
+.hero-slider :nth-child(2){ animation-delay: 4s }
+
+@keyframes fade{
+  0%{ opacity: 1 }
+  25%{ opacity: 1 }
+  50%{ opacity: 0 }
+  75%{ opacity: 0 }
+  100%{ opacity: 1 }
+}

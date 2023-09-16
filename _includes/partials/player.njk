@@ -1,0 +1,15 @@
+<div class="episode-player mb-4 rounded shadow"></div>
+<script src="/assets/shikwasa/shikwasa.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+  const player = new Shikwasa.Player({
+    container: () => document.querySelector('.episode-player'),
+    audio: {
+      title: '{{ epi.title }}',
+      artist: 'Ferulita para el Alma',
+      cover: '{{ epi.itunes.image }}',
+      src: '{{ epi.enclosure.url }}',
+    },
+  })
+});
+</script>

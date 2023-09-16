@@ -1,0 +1,22 @@
+<!-- featured episode -->
+<section>
+  <div class="container">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <h1 class="display-2">{{ epi.title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-4 d-none d-lg-block">
+      <img src="{{ epi.itunes.image }}" class="img-fluid mb-3 mb-lg-0 rounded" alt="">
+    </div>
+    <div class="col-12 col-lg-8">
+        {% include 'partials/player.njk' %}
+        <p class="episode-date">{{ epi.pubDate | readableDate}}</p>
+        <div class="episode-description">{{ epi.itunes.summary | safe }}</div>   
+
+        {% include 'partials/form-episode.njk' %} 
+    </div>
+  </div>
+    </div>
+</section>
