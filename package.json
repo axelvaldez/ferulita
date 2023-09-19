@@ -9,7 +9,9 @@
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "build": "npm-run-all build:*",
+    "prebuild": "rm -rf _site",
+    "postbuild": "mv _site/pages/episodios/* _site/episodios/ && rm -rf _site/pages"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,11 @@
+---
+layout: "layouts/page.njk"
+title: Todos los Episodios
+pagination:
+  data: podcast[0]
+  size: 6
+  alias: epis
+---
+
+{% include 'partials/episode-cards.njk' %}
+{% include 'partials/episodes-pagination.njk' %}
