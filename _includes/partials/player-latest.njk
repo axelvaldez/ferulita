@@ -10,6 +10,9 @@ window.addEventListener('load', function(){
       cover: '{{ podcast[0][0].itunes.image }}',
       src: '{{ podcast[0][0].enclosure.url }}',
     },
+    fixed: {
+      type: 'static',
+    }
   })
 });
 </script>

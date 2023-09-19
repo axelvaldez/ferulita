@@ -1,63 +1,27 @@
-@media (max-width: 640px){
-    .shk[data-fixed-type=auto]{
-        position: relative;
-    }
-    .shk-player{
-        padding: 20px;
-        height: unset;
-    }
+
+.episode-player .shk{
+  --background-body: #fff;                           /* background of the player body */
+  --color-title: var(--dark);                               /* color of the title text */
+  --color-artist: color-mix(in srgb, var(--dark) 75%, transparent);                              /* color of the artist text */
+  --color-button: var(--link);       /* color of the buttons, defaults to `themeColor` */
+  --color-button-disabled: color-mix(in srgb, var(--dark) 75%, transparent);                      /* color of button:disabled */
+  --color-button-active-background: var(--bg);            /* color of the background of button:active` */
+  --color-handle: var(--link);       /* color of the playback progress handle, defaults to `themeColor` */
+  --color-handle-disabled: color-mix(in srgb, var(--dark) 75%, transparent);                     /* color of the handle:disabled */
+  --color-bar-loaded: var(--link);                          /* color of the loaded playback progress, defaults to `themeColor` */
+  --color-bar-played: var(--link);   /* color of the loaded playback progress, defaults to `themeColor` */
+  --color-time: var(--dark);                                /* color of the playback time */
+  --color-spinner: var(--link);      /* color of the playback loading indicator, defaults to `themeColor` */
+  --color-live-symbol: var(--link);  /* color of the live indicator symbol, defaults to `themeColor` */
+  --color-live-text: var(--link);    /* color of the live indicator text, defaults to `themeColor` */
 }
 
-.shk-player{
-    background: transparent !important;
-    box-shadow: none !important;
-}
-
-.no-cover .shk-cover{
-    display: none;
-}
-
-.shk-main{
-    max-width: unset;
-}
-
-/* PLAYER  */
 
 .episode-player{
-    position: relative;
-    top: -4px;
-    background: white;
-  }
-  
-  .episode-player .shk-btn{
-    color: var(--link);
-  }
-  
-  @media (hover: hover){
-    .episode-player .shk-btn{
-      color: var(--dark);
-    }
-  
-    .episode-player .shk-btn:hover{
-      color: var(--link);
-    }
-  }
-  
-  .episode-player .shk-bar{
-    border-radius: .25rem .25rem 0 0;
-  }
-  
-  .episode-player .shk-bar_played{
-    border-radius: .25rem 0 0 0;
-  }
-  
-  .episode-player .shk-bar_loaded{
-    border-radius: .25rem 0 0 0;
-    background: var(--link);
-    opacity: .5;
-  }
-  
-  .episode-player .shk-bar-handle,
-  .episode-player .shk-bar_played{
-    background: var(--link);
-  }
+  position: relative;
+  top: -4px;
+}
+
+.episode-player .shk-bar_loaded{
+  opacity: .5;
+}
