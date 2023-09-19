@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-12 mt-5">
+        <form action="/gracias" method="post" name="invitado" netlify>
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label for="nombre" class="d-block mb-1">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" required>             
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="especialidad" class="d-block mb-1">Especialidad</label>
+                    <input type="text" name="especialidad" class="form-control">
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="informacion" class="d-block mb-1">Opcional: Información que quiera que mencionemos al presentarle</label>
+                    <textarea rows="6" name="informacion" class="form-control"></textarea>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="contacto" class="d-block mb-1">Información de contacto (consultorio, teléfono, etc)</label>
+                    <textarea rows="6" name="contacto" class="form-control"></textarea>
+                </div>
+                <div class="col-12 mt-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
