@@ -16,7 +16,9 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@netlify/functions": "^2.0.2",
     "luxon": "^3.4.3",
+    "node-fetch": "^3.3.2",
     "shikwasa": "^2.2.1"
   },
   "dependencies": {
