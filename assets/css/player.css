@@ -20,3 +20,44 @@
 .shk-main{
     max-width: unset;
 }
+
+/* PLAYER  */
+
+.episode-player{
+    position: relative;
+    top: -4px;
+    background: white;
+  }
+  
+  .episode-player .shk-btn{
+    color: var(--link);
+  }
+  
+  @media (hover: hover){
+    .episode-player .shk-btn{
+      color: var(--dark);
+    }
+  
+    .episode-player .shk-btn:hover{
+      color: var(--link);
+    }
+  }
+  
+  .episode-player .shk-bar{
+    border-radius: .25rem .25rem 0 0;
+  }
+  
+  .episode-player .shk-bar_played{
+    border-radius: .25rem 0 0 0;
+  }
+  
+  .episode-player .shk-bar_loaded{
+    border-radius: .25rem 0 0 0;
+    background: var(--link);
+    opacity: .5;
+  }
+  
+  .episode-player .shk-bar-handle,
+  .episode-player .shk-bar_played{
+    background: var(--link);
+  }
