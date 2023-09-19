@@ -18,7 +18,7 @@ pagination:
                         <object>
                         <div class="episode-image mb-3 rounded-top"><img src="{{ episode.itunes.image }}" class="img-fluid rounded-top"></div>
                         <h3 class="h5 mx-3 mb-1 episode-title">{{ episode.title }}</h3>
-                        <div class="episode-description mx-3 pb-3">{{ episode.itunes.summary | safe }}</div>
+                        <div class="episode-description truncate mx-3 pb-3">{{ episode.itunes.summary | safe }}</div>
                         </object>
                 </a>
         </div>
