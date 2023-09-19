@@ -42,6 +42,10 @@ h3, h4, h5, h6,
   letter-spacing: .025rem;
 }
 
+.navbar-brand{
+  font-size: unset !important;
+}
+
 /* BUTTONS  */
 
 .btn-primary{
