@@ -1,15 +1,8 @@
 <section class="alt">
   <div class="container">
   <div class="row">
-    <div class="col-12 mb-5 text-center">
-      <h2 class="h4">Nuestro episodio más reciente:<h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-10 offset-md-1 col-lg-2 offset-lg-2  col-xl-3 offset-xl-2">
-      <img src="{{ podcast[0][0].itunes.image }}" class="img-fluid mb-3 mb-lg-0 rounded" alt="">
-    </div>
-    <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+    <div class="col-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+        <h2 class="h6 mb-3">Nuestro episodio más reciente:<h2>
         <h3 class="mb-3 h2">{{ podcast[0][0].title }}</h3>
         {% include 'partials/player-latest.njk' %}
         <p class="episode-date">{{ podcast[0][0].pubDate | readableDate}}</p>

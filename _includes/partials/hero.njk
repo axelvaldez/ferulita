@@ -9,11 +9,16 @@
         </div>
         </div>
         <div class="col-12 col-lg-6 px-5 d-flex align-items-center">
-        {# <img src="{{ podcast[1].image.url }}" class="img-fluid mb-3 mb-lg-0" alt=""> #}
-        <div class="hero-slider">
-            <img src="/assets/img/slide-1.png" class="img-fluid mb-3 mb-lg-0 blend-multiply" alt="">
-            <img src="/assets/img/slide-2.png" class="img-fluid mb-3 mb-lg-0 blend-multiply" alt="">
-        </div>
+            <div id="carouselHero" class="carousel slide carousel-fade blend-multiply" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/img/slide-1.jpeg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/slide-2.jpeg" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -28,6 +28,10 @@ h3, h4, h5, h6,
   letter-spacing: .025rem;
 }
 
+.navbar h3 a{
+  font-size: unset;
+}
+
 section{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -137,8 +141,16 @@ a:hover{
   border: none;
 }
 
-.btn-primary:hover{
+.btn-outline-primary{
+  color: color-mix(in srgb, var(--link) 50%, var(--dark));
+  border-color: color-mix(in srgb, var(--link) 50%, var(--dark));
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover{
   background: color-mix(in srgb, var(--link) 50%, var(--dark));
+  border-color: color-mix(in srgb, var(--link) 50%, var(--dark));
+  color: white;
 }
 
 .episode-card,
@@ -163,7 +175,7 @@ a:hover{
 }
 
 .episode-player{
-  background: var(--bg-alt);
+  background: white;
 }
 
 .episode-player .shk-btn{

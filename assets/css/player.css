@@ -13,7 +13,7 @@
     box-shadow: none !important;
 }
 
-.shk-cover{
+.no-cover .shk-cover{
     display: none;
 }
 
