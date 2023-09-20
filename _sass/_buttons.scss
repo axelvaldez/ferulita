@@ -1,3 +1,7 @@
+.btn{
+    letter-spacing: .5px;
+}
+
 .btn-primary{
     background: var(--link);
     color: white;
@@ -5,20 +9,20 @@
 }
 
 .btn-outline-primary{
-    color: color-mix(in srgb, var(--link) 50%, var(--dark));
-    border-color: color-mix(in srgb, var(--link) 50%, var(--dark));
+    color: var(--link-muted);
+    border-color: var(--link-muted);
 }
 
 .btn-primary:hover,
 .btn-outline-primary:hover{
-    background: color-mix(in srgb, var(--link) 50%, var(--dark));
-    border-color: color-mix(in srgb, var(--link) 50%, var(--dark));
+    background: var(--link-muted);
+    border-color: var(--link-muted);
 color: white;
 }
 
 .btn:active{
-    background: color-mix(in srgb, var(--link) 50%, var(--dark)) !important;
-    border-color: color-mix(in srgb, var(--link) 50%, var(--dark)) !important;
+    background: var(--link-muted) !important;
+    border-color: var(--link-muted) !important;
     color: white;
     position: relative;
     overflow: hidden;

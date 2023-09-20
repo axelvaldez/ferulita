@@ -1,18 +1,18 @@
 <div class="row mt-5">
         {% if pagination.href.previous and  pagination.href.next %}
                 <div class="col-6">
-                        <a href="{{pagination.href.previous }}" class="btn btn-outline-primary">&larr; Episodios más recientes</a>
+                        <a href="{{pagination.href.previous }}" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-left me-2"></i><span class="d-none d-md-inline">Episodios </span>Recientes</a>
                 </div>
                 <div class="col-6 text-end">
-                        <a href="{{pagination.href.next }}" class="btn btn-outline-primary">Episodios Anteriores &rarr;</a>
+                        <a href="{{pagination.href.next }}" class="btn btn-outline-primary"><span class="d-none d-md-inline">Episodios </span>Anteriores<i class="fa-solid fa-arrow-right ms-2"></i></a>
                 </div>
         {% elif pagination.href.previous%}
                 <div class="col-6">
-                        <a href="{{pagination.href.previous }}" class="btn btn-outline-primary">&larr; Episodios más recientes</a>
+                        <a href="{{pagination.href.previous }}" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-left me-2"></i><span class="d-none d-md-inline">Episodios </span>Recientes</a>
                 </div>
         {% elif pagination.href.next%}
                 <div class="col-6 offset-6 text-end">
-                        <a href="{{pagination.href.next }}" class="btn btn-outline-primary">Episodios Anteriores &rarr;</a>
+                        <a href="{{pagination.href.next }}" class="btn btn-outline-primary"><span class="d-none d-md-inline">Episodios </span>Anteriores<i class="fa-solid fa-arrow-right ms-2"></i></a>
                 </div>
         {% endif %}
 </div>

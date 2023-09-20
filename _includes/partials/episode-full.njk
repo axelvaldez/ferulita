@@ -14,7 +14,7 @@
         {% include 'partials/player.njk' %}
         <p class="episode-date">{{ epi.pubDate | readableDate}}</p>
         <div class="episode-description">{{ epi.itunes.summary | safe }}</div>   
-        <p><a href="/contacto/">¿Tienes preguntas o comentarios?</a></p>
+        <p><a href="/contacto/" class="btn btn-primary"><i class="fa-solid fa-comment-dots me-2"></i>Envía un comentario</a></p>
     </div>
   </div>
     </div>

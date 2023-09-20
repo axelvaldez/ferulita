@@ -8,6 +8,7 @@ html{
   --bg: #DCE8EB;
   --bg-alt: #EBF2F3;
   --link: #00B1B4;
+  --link-muted: color-mix(in srgb, var(--link) 50%, var(--dark));
   --dark: #102935; 
 }
 
@@ -26,7 +27,7 @@ a{
 }
 
 a:hover{
-  color: color-mix(in srgb, var(--link) 50%, var(--dark));
+  color: var(--link-muted);
 }
 
 h1, h2,

@@ -1,3 +1,11 @@
 .navbar-brand{
     font-size: unset !important;
 }
+
+.navbar a:not(.btn){
+    color: var(--dark);
+
+    &:hover{
+        color: var(--link-muted);
+    }
+}
