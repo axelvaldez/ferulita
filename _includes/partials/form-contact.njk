@@ -1,10 +1,15 @@
 <div class="row">
     <div class="col-12 mt-5">
-        <form action="/gracias" method="post" name="contacto-episodio" netlify>
+        <form action="/gracias" method="post" name="contacto-episodio" netlify-honeypot="hunney" netlify>
             <div class="row">
                 <div class="col-12 col-lg-6 mb-2">
                     <label for="nombre" class="d-block mb-1">Nombre</label>
                     <input type="text" name="nombre" class="form-control" required>             
+                </div>
+                <div class="d-none">
+                    <label>
+                        Don’t fill this out: <input name="hunney" />
+                    </label>
                 </div>
                 <div class="col-12 col-lg-6 mb-2">
                     <label for="contacto" class="d-block mb-1">¿Cómo podemos contactarte?</label>
