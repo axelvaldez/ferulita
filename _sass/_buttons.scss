@@ -1,0 +1,35 @@
+.btn-primary{
+    background: var(--link);
+    color: white;
+    border: none;
+}
+
+.btn-outline-primary{
+    color: color-mix(in srgb, var(--link) 50%, var(--dark));
+    border-color: color-mix(in srgb, var(--link) 50%, var(--dark));
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover{
+    background: color-mix(in srgb, var(--link) 50%, var(--dark));
+    border-color: color-mix(in srgb, var(--link) 50%, var(--dark));
+color: white;
+}
+
+.btn:active{
+    background: color-mix(in srgb, var(--link) 50%, var(--dark)) !important;
+    border-color: color-mix(in srgb, var(--link) 50%, var(--dark)) !important;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    animation: 150ms ease-in-out 1 duck;
+}
+
+@keyframes duck{
+    from, to {
+        scale: 1;
+    }
+    50%{
+        scale: .75;
+    }
+}

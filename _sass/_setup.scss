@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Big+Shoulders+Text:wght@400;700&display=swap');
+
+
+/* BASICS */
+
+html{
+  font-size: 20px;
+  --bg: #DCE8EB;
+  --bg-alt: #EBF2F3;
+  --link: #00B1B4;
+  --dark: #102935; 
+}
+
+body{
+  font-family: "Big Shoulders Text";
+  font-weight: 400;
+  letter-spacing: .3px;
+  scroll-behavior: smooth;
+  background: var(--bg);
+  color: var(--dark);
+}
+
+a{
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover{
+  color: color-mix(in srgb, var(--link) 50%, var(--dark));
+}
+
+h1, h2,
+.h1, .h2{
+  font-family: "Big Shoulders display";
+  font-weight: 800;
+}
+
+h3, h4, h5, h6,
+.h3, .h4, .h5, .h6{
+  font-family: "Big Shoulders display";
+  font-weight: 700;
+  letter-spacing: .025rem;
+}

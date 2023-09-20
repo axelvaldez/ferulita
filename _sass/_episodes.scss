@@ -1,0 +1,42 @@
+.episode-description.truncate > :not(:first-child){
+    display: none;
+  }
+  
+  .episode-date{
+    opacity: .5;
+  }
+  
+  /* EPISODE CARDS */
+  
+  .episode-card{
+    position: relative;
+    display: block;
+    transition: 200ms ease-in all;
+  }
+  
+  .episode-card,
+  .episode-card:hover{
+    background: var(--bg-alt);
+    color: var(--dark);
+  }
+  
+  @media (hover: hover){
+    .episode-card{
+      transform: translateY(0);
+      transition: 200ms ease-in transform;
+    }
+  
+    .episode-card:hover{
+      transform: translateY(-0.5rem);
+    }
+  }
+  
+  .episode-card .episode-title{
+    color: var(--dark);
+    transition: 200ms ease-in all;
+  }
+  
+  .episode-card .episode-description > *{
+    margin: 0;
+    opacity: .75;
+  }
