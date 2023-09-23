@@ -31,6 +31,12 @@
     place-content: center;
     transform: scale(.8);
     transition: 200ms ease-in all;
+
+    & svg{
+      margin: auto;
+      margin-bottom: .05rem;
+      height: 1.25rem;
+    }
   }
 
   .cards .card:hover{
@@ -72,6 +78,12 @@
     transform-origin: 50% 80%;
     display: grid;
     place-content: center;
+
+    & svg{
+      margin: auto;
+      margin-bottom: .25rem;
+      height: 2rem;
+    }
     
     &:nth-child(1){
       rotate: var(--angle-start);
@@ -84,11 +96,6 @@
     &:nth-child(3){
       rotate: calc(var(--angle-start) + calc(var(--angle-increment) * 2));
     }
-  }
-
-  .card i{
-    font-size: 2rem;
-    margin-bottom: .25rem;
   }
 
   .cards:hover > :nth-child(1){
