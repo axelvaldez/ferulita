@@ -3,6 +3,10 @@
 
 /* BASICS */
 
+*{
+  box-sizing: border-box;
+}
+
 html{
   font-size: 20px;
   --bg: #DCE8EB;
