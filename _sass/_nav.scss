@@ -9,3 +9,17 @@
         color: var(--link-muted);
     }
 }
+
+.navbar-toggler{
+}
+.navbar-toggler .close{
+    display: none;
+}
+
+.navbar-toggler[aria-expanded=true] .close{
+    display: block;
+}
+
+.navbar-toggler[aria-expanded=true] .burger{
+    display: none;
+}
